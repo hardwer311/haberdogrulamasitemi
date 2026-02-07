@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haber Doğrulama Merkezi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <i class="fas fa-user-shield logo"></i>
+            <h1>Doğruluk Payı AI</h1>
+            <p>Şüpheli haberleri yapay zeka ile anında analiz edin.</p>
+        </header>
+
+        <div class="main-card">
+            <div class="input-section">
+                <textarea id="userInput" placeholder="Haber metnini buraya yapıştırın veya bir iddia yazın..."></textarea>
+                <button id="sendBtn">
+                    <i class="fas fa-search"></i> Analiz Et
+                </button>
+            </div>
+
+            <div class="result-section">
+                <div id="statusIndicator" class="status-hidden">
+                    <i class="fas fa-spinner fa-spin"></i> Analiz Ediliyor...
+                </div>
+                <div id="resultArea" class="chat-box">
+                    Haber analiz raporu burada görünecek.
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 TÜBİTAK Projesi - Haber Doğrulama Sistemi</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
